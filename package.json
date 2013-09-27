@@ -1,0 +1,30 @@
+{
+  "name": "unittesting",
+  "version": "0.0.1",
+  "description": "单元测试",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "muk": "*",
+    "rewire": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/liangmingyi/unittest.git"
+  },
+  "author": "Jackson Tian",
+  "license": "MIT",
+  "dependencies": {
+    "jscover": "~0.2.1",
+    "muk": "~0.2.0",
+    "rewire": "~1.0.3",
+    "should": "~1.2.1"
+  }
+}
