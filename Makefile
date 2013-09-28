@@ -16,7 +16,7 @@ lib-cov:
 
 test-coveralls:
 	$(MAKE) test REPORTER=spec
-	$(MAKE) test REPORTER=mocha-lcov-reporter | ./bin/coveralls.js --verbose
+	$(MAKE) test REPORTER=mocha-lcov-reporter | COVERALLS_REPO_TOKEN="UI8zFg66aoPV2bUG3T87w7hcwRIqpfI4g" ./node_modules/coveralls/bin/coveralls.js
 	rm -rf lib-cov
 
 .PHONY: test test-cov lib-cov
