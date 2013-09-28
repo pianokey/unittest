@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git://github.com/liangmingyi/unittest.git"
   },
-  "author": "Jackson Tian",
+  "author": "LiangMingyi",
   "license": "MIT",
   "dependencies": {
     "jscover": "~0.2.1",
