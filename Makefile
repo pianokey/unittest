@@ -14,4 +14,9 @@ lib-cov:
 	@rm -rf ./lib-cov
 	@$(JSCOVERAGE) lib lib-cov
 
+test-coveralls:
+	$(MAKE) test REPORTER=spec
+	$(MAKE) test REPORTER=mocha-lcov-reporter | ./bin/coveralls.js --verbose
+	rm -rf lib-cov
+
 .PHONY: test test-cov lib-cov
